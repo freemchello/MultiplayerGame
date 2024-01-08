@@ -38,14 +38,17 @@ public class Authorization : MonoBehaviourPunCallbacks
     {
         Connect();
     }
+    private void Awake()
+    {
+        PhotonNetwork.AutomaticallySyncScene = true;
+    }
 
     private void Connect()
     {
-        PhotonNetwork.AutomaticallySyncScene = true;
-
         if (PhotonNetwork.IsConnected)
         {
-            PhotonNetwork.JoinRandomOrCreateRoom(roomName: $"Room N{Random.Range(0, 9999)}");
+            PhotonNetwork.Disconnect();
+            return;
         }
         else
         {
@@ -59,8 +62,7 @@ public class Authorization : MonoBehaviourPunCallbacks
         base.OnConnectedToMaster();
         Debug.Log("OnConnectedToMaster");
         OnSuccessEvent.Invoke();
-        if (!PhotonNetwork.InRoom)
-            PhotonNetwork.JoinRandomOrCreateRoom(roomName: $"Room N{Random.Range(0, 9999)}");
+        PhotonNetwork.CreateRoom("New Room");
     }
 
     public override void OnCreatedRoom()
