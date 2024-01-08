@@ -2,13 +2,15 @@ using Photon.Pun;
 using Photon.Realtime;
 using PlayFab;
 using PlayFab.ClientModels;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Authorization : MonoBehaviourPunCallbacks
 {
     [SerializeField] private string _playFabTitle;
+
+    public UnityEvent OnSuccessEvent;
+    public UnityEvent OnFailureEvent;
 
     void Start()
     {
@@ -17,7 +19,7 @@ public class Authorization : MonoBehaviourPunCallbacks
 
         var request = new LoginWithCustomIDRequest
         {
-            CustomId = "TestUser",
+            CustomId = "User1",
             CreateAccount = true
         };
 
@@ -30,6 +32,11 @@ public class Authorization : MonoBehaviourPunCallbacks
                 Connect();
             },
             error => Debug.LogError(error));
+    }
+
+    public void OnTryToLogin()
+    {
+        Connect();
     }
 
     private void Connect()
@@ -51,6 +58,7 @@ public class Authorization : MonoBehaviourPunCallbacks
     {
         base.OnConnectedToMaster();
         Debug.Log("OnConnectedToMaster");
+        OnSuccessEvent.Invoke();
         if (!PhotonNetwork.InRoom)
             PhotonNetwork.JoinRandomOrCreateRoom(roomName: $"Room N{Random.Range(0, 9999)}");
     }
@@ -65,5 +73,12 @@ public class Authorization : MonoBehaviourPunCallbacks
     {
         base.OnJoinedRoom();
         Debug.Log($"OnJoinedRoom {PhotonNetwork.CurrentRoom.Name}");
+    }
+
+    public override void OnDisconnected(DisconnectCause cause)
+    {
+        base.OnDisconnected(cause);
+        OnFailureEvent.Invoke();
+        Debug.Log("Disconnect");
     }
 }
