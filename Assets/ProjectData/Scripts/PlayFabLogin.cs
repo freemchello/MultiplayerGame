@@ -29,14 +29,14 @@ public class PlayFabLogin : MonoBehaviour
         {
             CustomId = "User1",
             CreateAccount = true
-        };
-
+        }; 
         PlayFabClientAPI.LoginWithCustomID(request, OnLoginSuccess, OnLoginFailure);
     }
+
     private void OnLoginSuccess(LoginResult result)
     {
         button.GetComponentInChildren<TextMeshProUGUI>().text = "Log Out";
-        label.text = "Welcome";
+        label.text = "Welcome to PlayFab";
         dot.color = Color.green;
         label.color = Color.yellow;
         Debug.Log("Congratulations, you made successful API call!");
@@ -45,8 +45,9 @@ public class PlayFabLogin : MonoBehaviour
     {
         var errorMessage = error.GenerateErrorReport();
         button.GetComponentInChildren<TextMeshProUGUI>().text = "Log In";
-        label.text = "Goodbye";
-        dot.color = label.color = Color.red;
+        label.text = "Playfab Disconnected";
+        dot.color = Color.red;
+        label.color = Color.black;
         Debug.LogError($"Something went wrong: {errorMessage}");
     }
 
