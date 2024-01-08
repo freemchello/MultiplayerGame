@@ -16,26 +16,29 @@ public class PlayFabLogin : MonoBehaviour
     [SerializeField] private TextMeshProUGUI label;
     [SerializeField] private Image dot;
 
-
     public void Start()
     {
         button.onClick.AddListener(ButtonClicked);
+
         if (string.IsNullOrEmpty(PlayFabSettings.staticSettings.TitleId))
         {
             PlayFabSettings.staticSettings.TitleId = "BC440";
         }
+
         var request = new LoginWithCustomIDRequest
         {
             CustomId = "User1",
             CreateAccount = true
         };
+
         PlayFabClientAPI.LoginWithCustomID(request, OnLoginSuccess, OnLoginFailure);
     }
     private void OnLoginSuccess(LoginResult result)
     {
         button.GetComponentInChildren<TextMeshProUGUI>().text = "Log Out";
         label.text = "Welcome";
-        dot.color = label.color = Color.green;
+        dot.color = Color.green;
+        label.color = Color.yellow;
         Debug.Log("Congratulations, you made successful API call!");
     }
     private void OnLoginFailure(PlayFabError error)

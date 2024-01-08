@@ -24,14 +24,14 @@ public class PhotonLogIn : MonoBehaviour
     public void OnLogin()
     {
         button.GetComponentInChildren<TextMeshProUGUI>().text = "Log Out";
-        label.text = "Welcome";
+        label.text = "Welcome to Photon";
         dot.color = label.color = Color.green;
     }
 
     public void OnLogout()
     {
         button.GetComponentInChildren<TextMeshProUGUI>().text = "Log In";
-        label.text = "Goodbye";
+        label.text = "Photon disconnected";
         dot.color = label.color = Color.red;
     }
 }
