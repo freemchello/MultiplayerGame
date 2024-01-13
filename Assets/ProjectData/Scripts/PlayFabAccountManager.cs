@@ -19,6 +19,6 @@ public class PlayFabAccountManager : MonoBehaviour
 
     private void OnGetAccount(GetAccountInfoResult result)
     {
-        _titleLabel.text = $"PlayFab ID: {result.AccountInfo.PlayFabId}";
+        _titleLabel.text = $"PlayFab ID: {result.AccountInfo.PlayFabId} user: {result.AccountInfo.Username}";
     }
 }
