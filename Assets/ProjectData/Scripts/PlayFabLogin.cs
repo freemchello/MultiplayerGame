@@ -12,13 +12,19 @@ public class PlayFabLogin : MonoBehaviour
 {
     public UnityEvent ButtonEvent;
 
+    private const string AuthGuidKey = "1593578264";
+
     [SerializeField] private Button button;
     [SerializeField] private TextMeshProUGUI label;
     [SerializeField] private Image dot;
 
+
     public void Start()
     {
         button.onClick.AddListener(ButtonClicked);
+
+        var needCreation = PlayerPrefs.HasKey(AuthGuidKey);
+        var id = PlayerPrefs.GetString(AuthGuidKey, Guid.NewGuid().ToString());
 
         if (string.IsNullOrEmpty(PlayFabSettings.staticSettings.TitleId))
         {
@@ -27,10 +33,15 @@ public class PlayFabLogin : MonoBehaviour
 
         var request = new LoginWithCustomIDRequest
         {
-            CustomId = "User1",
-            CreateAccount = true
+            CustomId = id,
+            CreateAccount = !needCreation
         }; 
-        PlayFabClientAPI.LoginWithCustomID(request, OnLoginSuccess, OnLoginFailure);
+        PlayFabClientAPI.LoginWithCustomID(request,
+            result =>
+            {
+                PlayerPrefs.SetString(AuthGuidKey, id);
+                OnLoginSuccess(result);
+            },  OnLoginFailure);
     }
 
     private void OnLoginSuccess(LoginResult result)
