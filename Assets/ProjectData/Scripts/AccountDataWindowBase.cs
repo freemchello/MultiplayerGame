@@ -12,27 +12,32 @@ public class AccountDataWindowBase : MonoBehaviour
 
     private void Start()
     {
+
         SubscriptionsElementsUi();
     }
 
     protected virtual void SubscriptionsElementsUi()
     {
+
         _usernameField.onValueChanged.AddListener(UpdateUsername);
         _passwordField.onValueChanged.AddListener(UpdatePassword);
     }
 
     private void UpdatePassword(string password)
     {
+
         _password = password;
     }
 
     private void UpdateUsername(string username)
     {
+
         _username = username;
     }
 
     protected void EnterInGameScene()
     {
+
         SceneManager.LoadScene(1);
     }
 }

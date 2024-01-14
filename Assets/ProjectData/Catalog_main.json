@@ -1,0 +1,588 @@
+{
+  "CatalogVersion": "main",
+  "Catalog": [
+    {
+      "ItemId": "wooden_sword_id",
+      "ItemClass": "sword",
+      "CatalogVersion": "main",
+      "DisplayName": "Wood Sword",
+      "Description": "Description sword",
+      "VirtualCurrencyPrices": {
+        "FC": 10
+      },
+      "RealCurrencyPrices": {},
+      "Tags": [
+        "\"sword",
+        "weapon\""
+      ],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": null,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": null,
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": true,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": false,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    },
+    {
+      "ItemId": "chest_low_lvl_id",
+      "ItemClass": "chest",
+      "CatalogVersion": "main",
+      "DisplayName": null,
+      "Description": null,
+      "VirtualCurrencyPrices": {
+        "FC": 250
+      },
+      "RealCurrencyPrices": {},
+      "Tags": [],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": 1,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": {
+        "BundledItems": [
+          "wooden_sword_id",
+          "wooden_mace_id",
+          "bow_id",
+          "wooden_shield_id"
+        ],
+        "BundledResultTables": [],
+        "BundledVirtualCurrencies": null
+      },
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": false,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": false,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    },
+    {
+      "ItemId": "wooden_mace_id",
+      "ItemClass": "mace",
+      "CatalogVersion": "main",
+      "DisplayName": "Wood Mace",
+      "Description": "Description mace",
+      "VirtualCurrencyPrices": {
+        "FC": 10
+      },
+      "RealCurrencyPrices": {},
+      "Tags": [
+        "\"mace",
+        "weapon\""
+      ],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": null,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": null,
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": true,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": false,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    },
+    {
+      "ItemId": "bow_id",
+      "ItemClass": "bow",
+      "CatalogVersion": "main",
+      "DisplayName": "Bow",
+      "Description": "Description bow",
+      "VirtualCurrencyPrices": {
+        "FC": 10
+      },
+      "RealCurrencyPrices": {},
+      "Tags": [
+        "\"bow",
+        "weapon\""
+      ],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": null,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": null,
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": true,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": false,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    },
+    {
+      "ItemId": "wooden_shield_id",
+      "ItemClass": "shield",
+      "CatalogVersion": "main",
+      "DisplayName": "Wood Shield",
+      "Description": "Description shield",
+      "VirtualCurrencyPrices": {
+        "FC": 10
+      },
+      "RealCurrencyPrices": {},
+      "Tags": [
+        "\"shield",
+        "weapon\""
+      ],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": null,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": null,
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": true,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": false,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    },
+    {
+      "ItemId": "wooden_arrow_id",
+      "ItemClass": "arrow",
+      "CatalogVersion": "main",
+      "DisplayName": "Wood Arrow",
+      "Description": "Description bow",
+      "VirtualCurrencyPrices": {
+        "FC": 1
+      },
+      "RealCurrencyPrices": {},
+      "Tags": [
+        "\"bow",
+        "arrow",
+        "weapon\""
+      ],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": null,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": null,
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": true,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": true,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    },
+    {
+      "ItemId": "stone_arrow_id",
+      "ItemClass": "arrow",
+      "CatalogVersion": "main",
+      "DisplayName": "Stone Arrow",
+      "Description": "Description arrow",
+      "VirtualCurrencyPrices": {
+        "FC": 10
+      },
+      "RealCurrencyPrices": {},
+      "Tags": [
+        "\"bow",
+        "arrow",
+        "weapon\""
+      ],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": null,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": null,
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": true,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": true,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    },
+    {
+      "ItemId": "stone_mace_id",
+      "ItemClass": "mace",
+      "CatalogVersion": "main",
+      "DisplayName": "Stone Mace",
+      "Description": "Description mace",
+      "VirtualCurrencyPrices": {
+        "FC": 100
+      },
+      "RealCurrencyPrices": {},
+      "Tags": [
+        "\"mace",
+        "weapon\""
+      ],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": null,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": null,
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": true,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": false,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    },
+    {
+      "ItemId": "stone_shield_id",
+      "ItemClass": "shield",
+      "CatalogVersion": "main",
+      "DisplayName": "Stone Shield",
+      "Description": "Description shield",
+      "VirtualCurrencyPrices": {
+        "FC": 100
+      },
+      "RealCurrencyPrices": {},
+      "Tags": [
+        "\"shield",
+        "weapon\""
+      ],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": null,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": null,
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": true,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": false,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    },
+    {
+      "ItemId": "stone_sword_id",
+      "ItemClass": "sword",
+      "CatalogVersion": "main",
+      "DisplayName": "Stone Sword",
+      "Description": "Description sword",
+      "VirtualCurrencyPrices": {
+        "FC": 100
+      },
+      "RealCurrencyPrices": {},
+      "Tags": [
+        "\"sword",
+        "weapon\""
+      ],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": null,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": null,
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": true,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": false,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    },
+    {
+      "ItemId": "bow_recurve_id",
+      "ItemClass": "bow",
+      "CatalogVersion": "main",
+      "DisplayName": "Bow",
+      "Description": "Description bow",
+      "VirtualCurrencyPrices": {
+        "FC": 100
+      },
+      "RealCurrencyPrices": {},
+      "Tags": [
+        "\"bow",
+        "weapon\""
+      ],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": null,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": null,
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": true,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": false,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    },
+    {
+      "ItemId": "bow_compound_id",
+      "ItemClass": "bow",
+      "CatalogVersion": "main",
+      "DisplayName": "Bow",
+      "Description": "Description bow",
+      "VirtualCurrencyPrices": {
+        "FC": 500
+      },
+      "RealCurrencyPrices": {},
+      "Tags": [
+        "\"bow",
+        "weapon\""
+      ],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": null,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": null,
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": true,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": false,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    },
+    {
+      "ItemId": "iron_arrow_id",
+      "ItemClass": "arrow",
+      "CatalogVersion": "main",
+      "DisplayName": "Iron Arrow",
+      "Description": "Description arrow",
+      "VirtualCurrencyPrices": {
+        "FC": 100
+      },
+      "RealCurrencyPrices": {},
+      "Tags": [
+        "\"bow",
+        "arrow",
+        "weapon\""
+      ],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": null,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": null,
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": true,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": true,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    },
+    {
+      "ItemId": "iron_mace_id",
+      "ItemClass": "mace",
+      "CatalogVersion": "main",
+      "DisplayName": "Iron Mace",
+      "Description": "Description mace",
+      "VirtualCurrencyPrices": {
+        "FC": 500
+      },
+      "RealCurrencyPrices": {},
+      "Tags": [
+        "\"mace",
+        "weapon\""
+      ],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": null,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": null,
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": true,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": false,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    },
+    {
+      "ItemId": "iron_shield_id",
+      "ItemClass": "shield",
+      "CatalogVersion": "main",
+      "DisplayName": "Iron Shield",
+      "Description": "Description shield",
+      "VirtualCurrencyPrices": {
+        "FC": 500
+      },
+      "RealCurrencyPrices": {},
+      "Tags": [
+        "\"shield",
+        "weapon\""
+      ],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": null,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": null,
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": true,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": false,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    },
+    {
+      "ItemId": "iron_sword_id",
+      "ItemClass": "sword",
+      "CatalogVersion": "main",
+      "DisplayName": "Iron Sword",
+      "Description": "Description sword",
+      "VirtualCurrencyPrices": {
+        "FC": 500
+      },
+      "RealCurrencyPrices": {},
+      "Tags": [
+        "\"sword",
+        "weapon\""
+      ],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": null,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": null,
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": true,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": false,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    },
+    {
+      "ItemId": "chest_medium_lvl_id",
+      "ItemClass": "chest",
+      "CatalogVersion": "main",
+      "DisplayName": null,
+      "Description": null,
+      "VirtualCurrencyPrices": {
+        "FC": 500
+      },
+      "RealCurrencyPrices": {},
+      "Tags": [],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": 1,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": {
+        "BundledItems": [
+          "stone_mace_id",
+          "stone_shield_id",
+          "stone_sword_id",
+          "bow_recurve_id"
+        ],
+        "BundledResultTables": [],
+        "BundledVirtualCurrencies": null
+      },
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": false,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": false,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    },
+    {
+      "ItemId": "chest_high_lvl_id",
+      "ItemClass": "chest",
+      "CatalogVersion": "main",
+      "DisplayName": null,
+      "Description": null,
+      "VirtualCurrencyPrices": {
+        "FC": 1000
+      },
+      "RealCurrencyPrices": {},
+      "Tags": [],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": 1,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": {
+        "BundledItems": [
+          "iron_sword_id",
+          "iron_shield_id",
+          "iron_mace_id",
+          "bow_compound_id"
+        ],
+        "BundledResultTables": [],
+        "BundledVirtualCurrencies": null
+      },
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": false,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": false,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    }
+  ],
+  "DropTables": [
+    {
+      "TableId": "table_id",
+      "Nodes": [
+        {
+          "ResultItemType": "ItemId",
+          "ResultItem": "wooden_sword_id",
+          "Weight": 3
+        },
+        {
+          "ResultItemType": "ItemId",
+          "ResultItem": "chest_low_lvl_id",
+          "Weight": 1
+        },
+        {
+          "ResultItemType": "ItemId",
+          "ResultItem": "wooden_mace_id",
+          "Weight": 3
+        }
+      ]
+    }
+  ]
+}
