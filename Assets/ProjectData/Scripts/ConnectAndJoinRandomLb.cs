@@ -4,13 +4,20 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ConnectAndJoinRandomLb : MonoBehaviour, IConnectionCallbacks, IMatchmakingCallbacks, ILobbyCallbacks
 {
 
     [SerializeField] private ServerSettings _serverSettings;
-
     [SerializeField] private TMP_Text _stateUiText;
+
+    [SerializeField] private Button _startButton;
+    [SerializeField] private Button _exitButton;
+    [SerializeField] private Button _roomForFriendsButton;
+    [SerializeField] private Button _launchButton;
+
+    [SerializeField] private TMP_InputField _privateRoomName;
 
     private LoadBalancingClient _lbc;
 
@@ -22,7 +29,7 @@ public class ConnectAndJoinRandomLb : MonoBehaviour, IConnectionCallbacks, IMatc
 
     private TypedLobby _sqlLobby = new TypedLobby("customSqlLobby", LobbyType.SqlLobby);
 
-
+    private string roomNameText;
 
     private void Start()
     {
@@ -61,13 +68,14 @@ public class ConnectAndJoinRandomLb : MonoBehaviour, IConnectionCallbacks, IMatc
             MaxPlayers = 6,
             PublishUserId = true,
             CustomRoomPropertiesForLobby = new[] { MAP_PROP_KEY, GOLD_PROP_KEY },
-            CustomRoomProperties = new ExitGames.Client.Photon.Hashtable { { GOLD_PROP_KEY, 400 } , { MAP_PROP_KEY, "Map3" } }
+            CustomRoomProperties = new ExitGames.Client.Photon.Hashtable 
+                { { GOLD_PROP_KEY, 400 } , { MAP_PROP_KEY, "Map3" } }
         };
         var enterRoomParams = new EnterRoomParams 
         {
-            RoomName = "NewRoom", 
+            RoomName = roomNameText, 
             RoomOptions = roomOptions,
-            ExpectedUsers = new[] {"5447384569"},
+            ExpectedUsers = new[] {"123456"},
             Lobby = _sqlLobby
             
         };
